@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout from '../components/layout';
 import MainWrapper from "../components/mainWrapper";
 import Background from '../components/background';
+import Expertise from '../components/expertise'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         </Head>
         <MainWrapper />
         <Background />
+        <Expertise />
     </Layout>
   )
 }

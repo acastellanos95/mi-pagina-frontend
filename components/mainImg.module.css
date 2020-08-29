@@ -1,0 +1,38 @@
+.imagebg {
+  background-image: url(/images/bg-image-home.png);
+  height: 88.5vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+.wrapperText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  line-height: 1.1;
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+}
+
+.mainDescription {
+  font-size: 1.5rem;
+}
+
+.BtnWrapper {
+  padding: 5px 5px;
+  bottom: 30%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.BtnItem {
+  padding: 8px 8px;
+  color: black;
+}

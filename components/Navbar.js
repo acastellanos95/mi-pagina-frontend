@@ -22,24 +22,24 @@ export default function NavHome(){
   const toggle = () => setIsOpen(!isOpen);
   return (
     <Navbar className={Styles.container} color="white" light expand="md">
-      <NavbarBrand className={Styles.mainName}><Link href="/">{"{a};"}</Link></NavbarBrand>
+      <NavbarBrand className={Styles.mainName}><Link href="/"><a>{"{a};"}</a></Link></NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ml-auto" navbar>
           <NavItem>
-            <NavLink className={Styles.navLinks}><Link href="/cv">CV</Link></NavLink>
+            <NavLink className={Styles.navLinks}><Link href="/cv"><a>CV</a></Link></NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className={Styles.navLinks}><Link href="/projects">Projects</Link></NavLink>
+            <NavLink className={Styles.navLinks}><Link href="/projects"><a>Projects</a></Link></NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className={Styles.navLinks}><Link href="/blog">Blog</Link></NavLink>
+            <NavLink className={Styles.navLinks}><Link href="/blog"><a>Blog</a></Link></NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className={Styles.navLinks}><Link href="/about-me">About me</Link></NavLink>
+            <NavLink className={Styles.navLinks}><Link href="/about-me"><a>About me</a></Link></NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className={Styles.navLinks}><Link href="/contact">Contact</Link></NavLink>
+            <NavLink className={Styles.navLinks}><Link href="/contact"><a>Contact</a></Link></NavLink>
           </NavItem>
           </Nav>
       </Collapse>

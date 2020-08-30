@@ -1,12 +1,11 @@
 .container {
   padding: 5% 15%;
-  text-align: justify;
 }
 
 .tabDisplayWrapper {
   display: flex;
-  flex-direction: row wrap;
+  flex-wrap: wrap;
+  align-content: space-between;
   justify-content: space-evenly;
-  align-content: space-around;
   padding: 15px 0;
 }

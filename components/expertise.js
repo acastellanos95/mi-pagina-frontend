@@ -2,6 +2,7 @@ import Styles from './expertise.module.css';
 import { useState } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from 'reactstrap';
 import classnames from 'classnames';
+import Tabtext from './tabtext';
 
 export default function Expertise(){
   const [activeTab, setActiveTab] = useState('1');
@@ -14,12 +15,16 @@ export default function Expertise(){
       <Nav tabs style={{
         display: "flex",
         justifyContent: "center",
-        flexDirection: "row"
+        fontSize: "0.8rem",
+        fontWeight: "600"
       }}>
         <NavItem>
           <NavLink
             className={classnames({ active: activeTab === '1' })}
             onClick={() => { toggle('1'); }}
+            style={{
+              color: "black"
+            }}
           >
             Languages
           </NavLink>
@@ -28,6 +33,9 @@ export default function Expertise(){
           <NavLink
             className={classnames({ active: activeTab === '2' })}
             onClick={() => { toggle('2'); }}
+            style={{
+              color: "black"
+            }}
           >
             Technologies
           </NavLink>
@@ -36,6 +44,9 @@ export default function Expertise(){
           <NavLink
             className={classnames({ active: activeTab === '3' })}
             onClick={() => { toggle('3'); }}
+            style={{
+              color: "black"
+            }}
           >
             Knowledge
           </NavLink>
@@ -44,75 +55,74 @@ export default function Expertise(){
       <TabContent activeTab={activeTab}>
         <TabPane tabId="1">
           <div className={Styles.tabDisplayWrapper}>
-            <h5>
+            <Tabtext>
               C\C++14/Fortran95
-            </h5>
-            <h5>
+            </Tabtext>
+            <Tabtext>
               Python 3.7
-            </h5>
-            <h5>
+            </Tabtext>
+            <Tabtext>
               HTML/CSS/Javascript
-            </h5>
-            <h5>
+            </Tabtext>
+            <Tabtext>
               C#
-            </h5>
-            <h5>
+            </Tabtext>
+            <Tabtext>
               PHP
-            </h5>
+            </Tabtext>
           </div>
         </TabPane>
         <TabPane tabId="2">
           <div className={Styles.tabDisplayWrapper}>
-            <h5>
+            <Tabtext>
               MERN stack
-            </h5>
-            <h5>
-              Next.js 
-            </h5>
-            <h5>
-              Strapi/Wordpress 
-            </h5>
-            <h5>
+            </Tabtext>
+            <Tabtext>
+              Next.js
+            </Tabtext>
+            <Tabtext>
+              Strapi/Wordpress
+            </Tabtext>
+            <Tabtext>
               SQL/mongoDB 
-            </h5>
-          </div>
-          <div className={Styles.tabDisplayWrapper}>
-            <h5>
+            </Tabtext>
+            <Tabtext>
               Firebase/GCP/Heroku
-            </h5>
-            <h5>
+            </Tabtext>
+            <Tabtext>
               Pandas/Matplotlib/Seaborn 
-            </h5>
-            <h5>
-              Geant4 GROMACS
-            </h5>
+            </Tabtext>
+            <Tabtext>
+              Geant4
+            </Tabtext>
+            <Tabtext>
+            GROMACS
+            </Tabtext>
           </div>
         </TabPane>
         <TabPane tabId="3">
           <div className={Styles.tabDisplayWrapper}>
-            <h5>
+            <Tabtext>
               Physics
-            </h5>
-            <h5>
+            </Tabtext>
+            <Tabtext>
               Graphs
-            </h5>
-            <h5>
+            </Tabtext>
+            <Tabtext>
               Data Structures/Algorithms
-            </h5>
-            <h5>
+            </Tabtext>
+            <Tabtext>
               Computational Physics
-            </h5>
-          </div>
-          <div className={Styles.tabDisplayWrapper}>
-            <h5>
+            </Tabtext>
+            <Tabtext>
               Data analysis
-            </h5>
-            <h5>
+            </Tabtext>
+            <Tabtext>
               Molecular Simulation
-            </h5>
-            <h5>
+            </Tabtext>
+            <Tabtext>
               Simulation Theory
-            </h5>
+            </Tabtext>
           </div>
         </TabPane>
       </TabContent>

@@ -1,8 +1,10 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import NavHome from './Navbar';
+import Footer from './footer';
 
 export default function Layout({ children, home }) {
+  
   return (
     <div>
       <Head>
@@ -20,6 +22,7 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <Footer/>
     </div>
   )
 }

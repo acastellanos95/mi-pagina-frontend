@@ -12,10 +12,10 @@ export default function MainWrapper(){
             </h5>
           </div>
           <div className={Styles.BtnWrapper}>
-            <a href="https://www.facebook.com/andredevanymin" target="_blank"><i className={"fab fa-facebook fa-lg "+Styles.BtnItem}></i></a>
-            <a href="https://wa.me/5212212851045" target="_blank"><i className={"fab fa-whatsapp fa-lg "+Styles.BtnItem}></i></a>
-            <a href="https://github.com/acastellanos95" target="_blank"><i className={"fab fa-github fa-lg "+Styles.BtnItem}></i></a>
-            <a href="https://www.linkedin.com/in/acastellanos95/" target="_blank"><i className={"fab fa-linkedin-in fa-lg "+Styles.BtnItem}></i></a>
+            <a href="https://www.facebook.com/andredevanymin" target="_blank" rel="noopener noreferrer" ><i className={"fab fa-facebook fa-lg "+Styles.BtnItem}></i></a>
+            <a href="https://wa.me/5212212851045" target="_blank" rel="noopener noreferrer" ><i className={"fab fa-whatsapp fa-lg "+Styles.BtnItem}></i></a>
+            <a href="https://github.com/acastellanos95" target="_blank" rel="noopener noreferrer" ><i className={"fab fa-github fa-lg "+Styles.BtnItem}></i></a>
+            <a href="https://www.linkedin.com/in/acastellanos95/" target="_blank" rel="noopener noreferrer" ><i className={"fab fa-linkedin-in fa-lg "+Styles.BtnItem}></i></a>
           </div>
         </div>
   );

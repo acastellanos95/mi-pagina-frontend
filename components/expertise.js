@@ -56,13 +56,13 @@ export default function Expertise(){
         <TabPane tabId="1">
           <div className={Styles.tabDisplayWrapper}>
             <Tabtext>
-              C\C++14/Fortran95
+              C\C++14
             </Tabtext>
             <Tabtext>
-              Python 3.7
+              Python3
             </Tabtext>
             <Tabtext>
-              HTML/CSS/Javascript
+              HTML/CSS/JS
             </Tabtext>
             <Tabtext>
               C#
@@ -75,7 +75,7 @@ export default function Expertise(){
         <TabPane tabId="2">
           <div className={Styles.tabDisplayWrapper}>
             <Tabtext>
-              MERN stack
+              MERN
             </Tabtext>
             <Tabtext>
               Next.js
@@ -90,13 +90,16 @@ export default function Expertise(){
               Firebase/GCP/Heroku
             </Tabtext>
             <Tabtext>
-              Pandas/Matplotlib/Seaborn 
+              Pandas
+            </Tabtext>
+            <Tabtext>
+              Matplotlib/Seaborn 
             </Tabtext>
             <Tabtext>
               Geant4
             </Tabtext>
             <Tabtext>
-            GROMACS
+              GROMACS
             </Tabtext>
           </div>
         </TabPane>

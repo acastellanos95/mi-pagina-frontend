@@ -6,6 +6,6 @@
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 15px 0;
 }

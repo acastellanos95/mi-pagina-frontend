@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import utilStyles from '../styles/about-me.module.css';
 import styles from '../styles/about-me-layout.module.css';
+import Head from "next/head";
 
 export default function AboutMe(){
   return(

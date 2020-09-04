@@ -22,7 +22,7 @@ const Article = () => {
           <Layout>
             <Head>
               <title>André Castellanos: {article.title}</title>
-              <link rel="canonical" href={"https://andrecastellanos.dev/article?id="+article.id}/>
+              <link rel="canonical" href={"https://andrecastellanos.dev/blog/article?id="+article.id}/>
               <link rel="publisher" href="https://andrecastellanos.dev/"/>
               <meta name="rating" content="general"/>
               <meta name="author" content="André Castellanos"/>
@@ -35,7 +35,7 @@ const Article = () => {
               <meta property="og:locale" content="es_MX"/>
               <meta property="og:type" content="website"/>
               <meta property="og:description" content={article.title}/>
-              <meta property="og:url" content={"https://andrecastellanos.dev/article?id="+router.query.id} />
+              <meta property="og:url" content={"https://andrecastellanos.dev/blog/article?id="+router.query.id} />
               <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
               <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js" />
               <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js" />

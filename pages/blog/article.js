@@ -31,10 +31,11 @@ const Article = () => {
               <meta name="robots" content="All"/>
               <meta name="keywords" content={"blog, andre, castellanos, programación, ingenieria, software, fisica, "+Categories.join(",")}/>
               <meta name="description" content="Soy ingeniero en software y físico-matemático, creo aplicaciones web y aplicaciones numéricas a tu disposición."/>
-              <meta property="og:title" content={"André Castellanos: "+article.title}/>
+              <meta property="og:title" content={article.title}/>
               <meta property="og:locale" content="es_MX"/>
               <meta property="og:type" content="website"/>
-              <meta property="og:description" content={article.title}/>
+              <meta property="og:description" content={article.content.substring(0,50)}/>
+              <meta property="og:image" content={imageUrl}/>
               <meta property="og:url" content={"https://andrecastellanos.dev/blog/article?id="+router.query.id} />
               <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
               <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js" />

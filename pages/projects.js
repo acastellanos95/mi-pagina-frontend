@@ -33,8 +33,8 @@ export default function Projects(){
       <Layout>
         <Head>
           <title>André Castellanos: Projects</title>
-          <link rel="canonical" href="https://andrecastellanos.dev/projects"/>
-          <link rel="publisher" href="https://andrecastellanos.dev/"/>
+          <link rel="canonical" href="https://www.andrecastellanos.dev/projects"/>
+          <link rel="publisher" href="https://www.andrecastellanos.dev/"/>
           <meta name="rating" content="general"/>
           <meta name="author" content="André Castellanos"/>
           <meta name="designer" content="acastellanosaldama@gmail.com"/>
@@ -46,7 +46,7 @@ export default function Projects(){
           <meta property="og:locale" content="es_MX"/>
           <meta property="og:type" content="website"/>
           <meta property="og:description" content="Soy freelancer, ingeniero en software y físico-matemático. Creo aplicaciones web y aplicaciones numéricas a tu servicio."/>
-          <meta property="og:url" content="https://andrecastellanos.dev/projects"/>
+          <meta property="og:url" content="https://www.andrecastellanos.dev/projects"/>
         </Head>
         <Container>
           <Row>

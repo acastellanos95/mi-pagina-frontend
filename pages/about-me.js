@@ -8,8 +8,8 @@ export default function AboutMe(){
     <Layout>
       <Head>
         <title>André Castellanos: About Me</title>
-        <link rel="canonical" href="https://andrecastellanos.dev/about-me"/>
-        <link rel="publisher" href="https://andrecastellanos.dev/"/>
+        <link rel="canonical" href="https://www.andrecastellanos.dev/about-me"/>
+        <link rel="publisher" href="https://www.andrecastellanos.dev/"/>
         <meta name="rating" content="general"/>
         <meta name="author" content="André Castellanos"/>
         <meta name="designer" content="acastellanosaldama@gmail.com"/>
@@ -21,7 +21,7 @@ export default function AboutMe(){
         <meta property="og:locale" content="es_MX"/>
         <meta property="og:type" content="website"/>
         <meta property="og:description" content="Soy freelancer, ingeniero en software y físico-matemático. Creo aplicaciones web y aplicaciones numéricas a tu servicio."/>
-        <meta property="og:url" content="https://andrecastellanos.dev/about-me"/>
+        <meta property="og:url" content="https://www.andrecastellanos.dev/about-me"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js" />
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js" />

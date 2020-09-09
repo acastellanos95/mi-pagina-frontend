@@ -5,8 +5,7 @@ import { Row, Col, Container } from "reactstrap";
 import Project from '../components/project';
 import Head from "next/head";
 
-const QUERY = gql`
-{projects {id Title description page_thumbnail{url} url}}`;
+const QUERY = gql`{projects {id title description project_image{url} url} }`;
 
 export default function Projects(){
   const { loading, error, data } = useQuery(QUERY);
@@ -14,7 +13,7 @@ export default function Projects(){
     return(
       <Layout>
         <h4>
-          An error occured.
+          {error.message}
         </h4>
       </Layout>
     );
@@ -46,7 +45,7 @@ export default function Projects(){
           <meta property="og:locale" content="es_MX"/>
           <meta property="og:type" content="website"/>
           <meta property="og:description" content="Soy freelancer, ingeniero en software y físico-matemático. Creo aplicaciones web y aplicaciones numéricas a tu servicio."/>
-          <meta property="og:url" content="https://www.andrecastellanos.dev/projects"/>
+          <meta property="og:url" content="https://www.andrecastellanos.dev/"/>
         </Head>
         <Container>
           <Row>

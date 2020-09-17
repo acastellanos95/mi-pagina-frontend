@@ -1,13 +1,18 @@
 import Layout from "../components/layout";
 import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
-import NavBlog from "../components/navBlog";
 import Head from "next/head";
 import Articles from "../components/Articles";
-import Query from "../components/query";
-import ARTICLES_QUERY from "../apollo/queries/article/articles";
 
-export default function Blog() {
+export async function getStaticProps(context) {
+  const res = await fetch("https://admin.andrecastellanos.dev/articles");
+  const articles = await res.json();
+  return {
+    props: { articles }, // will be passed to the page component as props
+  };
+}
+
+export default function Blog({ articles }) {
   return (
     <Layout>
       <Head>
@@ -46,11 +51,7 @@ export default function Blog() {
       {/* <NavBlog /> */}
       <div className="uk-section">
         <div className="uk-container uk-container-large">
-          <Query query={ARTICLES_QUERY}>
-            {({ data: { articles } }) => {
-              return <Articles articles={articles} />;
-            }}
-          </Query>
+          <Articles articles={articles} />
         </div>
       </div>
     </Layout>

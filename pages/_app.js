@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps, apollo }) {
           content="initial-scale=1.0, width=device-width shrink-to-fit=no"
         />
         <script
+          async
           src="https://kit.fontawesome.com/900ac71d5e.js"
           crossOrigin="anonymous"
         />

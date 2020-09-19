@@ -3,13 +3,18 @@ const express = require("express");
 const http = require("http");
 const https = require("https");
 const fs = require("fs");
-
+const shell = require("shelljs");
+const cors = require("cors");
 const httpPort = 80;
 const httpsPort = 443;
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
 const server = express();
+
+var corsOptions = {
+  origin: "https://admin.andrecastellanos.dev",
+};
 
 const options = {
   key: fs.readFileSync(
@@ -19,6 +24,10 @@ const options = {
 };
 
 app.prepare().then(() => {
+  server.route("/hook", cors(corsOptions)).post((req, res) => {
+    shell.exec("./rebuildhook.sh");
+    res.status(200).end();
+  });
   server.all("*", (req, res) => {
     return handle(req, res);
   });

@@ -60,14 +60,14 @@ const Article = ({ article }) => {
         />
         <meta
           name="description"
-          content="Soy ingeniero en software y físico-matemático, creo aplicaciones web y aplicaciones numéricas a tu disposición."
+          content={article.description.substring(0, 100)}
         />
         <meta property="og:title" content={article.title} />
         <meta property="og:locale" content="es_MX" />
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
-          content={article.content.substring(0, 50)}
+          content={article.content.substring(0, 100)}
         />
         <meta property="og:image" content={imageUrl} />
         <meta property="og:url" content="https://www.andrecastellanos.dev/" />

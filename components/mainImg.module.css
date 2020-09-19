@@ -10,17 +10,8 @@
 .wrapperText {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 55%;
   transform: translateX(-50%) translateY(-50%);
-  line-height: 1.1;
-}
-
-.mainTitle {
-  font-size: 2.5rem;
-}
-
-.mainDescription {
-  font-size: 1.5rem;
 }
 
 .BtnWrapper {

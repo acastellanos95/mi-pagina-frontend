@@ -3,15 +3,14 @@
   z-index: 1000;
 }
 
-.mainName a{
-  font-family: "Montserrat";
+.mainName a {
   font-size: 1.5em;
   font-weight: 300;
   color: black;
   text-decoration: none;
 }
 
-.navLinks a{
+.navLinks a {
   color: black;
   text-decoration: none;
 }

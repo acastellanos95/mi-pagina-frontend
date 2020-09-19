@@ -1,6 +1,4 @@
 import Layout from "../components/layout";
-import { gql } from "apollo-boost";
-import { useQuery } from "@apollo/react-hooks";
 import Head from "next/head";
 import Articles from "../components/Articles";
 

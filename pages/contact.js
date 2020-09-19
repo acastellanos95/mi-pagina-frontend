@@ -43,7 +43,7 @@ export default function Contact() {
         style={{ textAlign: "center", padding: "10% 10%" }}
         className="container-fluid"
       >
-        <h2>Tomemos un café y hablemos de proyectos</h2>
+        <h2>let me invite you a coffee and talk about projects</h2>
         <h4>
           <a href="tel:+5212212851045">221-285-1045</a>
         </h4>

@@ -43,7 +43,7 @@ const Article = ({ article }) => {
         <title>André Castellanos: {article.title}</title>
         <link
           rel="canonical"
-          href={"https://andrecastellanos.dev/blog/article?id=" + article.id}
+          href={"https://andrecastellanos.dev/blog/article/" + article.id}
         />
         <link rel="publisher" href="https://andrecastellanos.dev/" />
         <meta name="rating" content="general" />

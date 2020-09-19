@@ -27,7 +27,10 @@ export async function getStaticProps({ params }) {
   );
   const article = await res.json();
   return {
-    props: { article }, // will be passed to the page component as props
+    props: {
+      article,
+    }, // will be passed to the page component as props
+    revalidate: 1,
   };
 }
 

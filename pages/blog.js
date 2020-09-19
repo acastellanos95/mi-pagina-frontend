@@ -6,7 +6,10 @@ export async function getStaticProps(context) {
   const res = await fetch("https://admin.andrecastellanos.dev/articles");
   const articles = await res.json();
   return {
-    props: { articles }, // will be passed to the page component as props
+    props: {
+      articles,
+    }, // will be passed to the page component as props
+    revalidate: 1,
   };
 }
 

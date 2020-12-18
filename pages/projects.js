@@ -4,7 +4,7 @@ import Project from "../components/project";
 import Head from "next/head";
 
 export async function getStaticProps(context) {
-  const res = await fetch("https://admin.andrecastellanos.dev/projects");
+  const res = await fetch("https://polar-journey-96637.herokuapp.com/projects");
   const projects = await res.json();
   return {
     props: {

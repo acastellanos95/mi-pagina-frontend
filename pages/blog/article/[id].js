@@ -10,7 +10,7 @@ export default function Article({ article }) {
   var imageUrl = "";
   var categories = [];
   if (article) {
-    var imageUrl = "https://admin.andrecastellanos.dev" + article.image.url;
+    var imageUrl = article.image.url;
     var Categories = article.categories.map((category) => {
       return category.name;
     });
@@ -92,7 +92,7 @@ export default function Article({ article }) {
 
 export async function getStaticProps({ params }) {
   const res = await fetch(
-    `https://admin.andrecastellanos.dev/articles/${params.id}`
+    `https://polar-journey-96637.herokuapp.com/articles/${params.id}`
   );
   const article = await res.json();
   return {
@@ -104,7 +104,9 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const res = await fetch(`https://admin.andrecastellanos.dev/articles/`);
+  const res = await fetch(
+    `https://polar-journey-96637.herokuapp.com/articles/`
+  );
   const articles = await res.json();
   const paths = articles.map((article) => {
     return {

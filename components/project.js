@@ -13,7 +13,7 @@ export default function Project(props) {
       <CardImg
         top
         width="100%"
-        src={`https://admin.andrecastellanos.dev${props.data.project_image.url}`}
+        src={`${props.data.project_image.url}`}
         alt={props.data.Title}
       />
       <CardBody>

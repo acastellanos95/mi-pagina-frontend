@@ -3,7 +3,7 @@ import Head from "next/head";
 import Articles from "../components/Articles";
 
 export async function getStaticProps(context) {
-  const res = await fetch("https://admin.andrecastellanos.dev/articles");
+  const res = await fetch("https://polar-journey-96637.herokuapp.com/articles");
   const articles = await res.json();
   return {
     props: {

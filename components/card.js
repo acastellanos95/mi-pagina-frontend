@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 const Card = ({ article }) => {
-  const imageUrl = "https://admin.andrecastellanos.dev" + article.image.url;
+  const imageUrl = article.image.url;
   return (
     <Link href={`/blog/article/${article.id}`}>
       <a className="uk-link-reset">

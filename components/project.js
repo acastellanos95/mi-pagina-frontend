@@ -10,12 +10,14 @@ import {
 export default function Project(props) {
   return (
     <Card className="h-100">
-      <CardImg
-        top
-        width="100%"
-        src={`${props.data.project_image.url}`}
-        alt={props.data.Title}
-      />
+      {props.data.project_image?.url && (
+        <CardImg
+          top
+          width="100%"
+          src={`${props.data.project_image.url}`}
+          alt={props.data.Title}
+        />
+      )}
       <CardBody>
         <CardTitle>{props.data.Title}</CardTitle>
         <CardText>{props.data.description}</CardText>

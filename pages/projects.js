@@ -42,6 +42,7 @@ export default function Projects({ projects }) {
           content="Soy freelancer, ingeniero en software y físico-matemático. Creo aplicaciones web y aplicaciones numéricas a tu servicio."
         />
         <meta property="og:url" content="https://andrecastellanos.dev/" />
+        <meta property="version" content="0.0.1"/>
       </Head>
       <Container>
         <Row>

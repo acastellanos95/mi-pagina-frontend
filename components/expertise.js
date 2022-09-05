@@ -59,35 +59,35 @@ export default function Expertise(){
               C\C++14
             </Tabtext>
             <Tabtext>
+              C#
+            </Tabtext>
+            <Tabtext>
               Python3
             </Tabtext>
             <Tabtext>
               HTML/CSS/JS
             </Tabtext>
             <Tabtext>
-              C#
-            </Tabtext>
-            <Tabtext>
-              PHP
+              SQL
             </Tabtext>
           </div>
         </TabPane>
         <TabPane tabId="2">
           <div className={Styles.tabDisplayWrapper}>
             <Tabtext>
-              MERN
+              .NET
             </Tabtext>
             <Tabtext>
-              Next.js
+              Node.js
             </Tabtext>
             <Tabtext>
-              Strapi/Wordpress
+              MERN (Next.js + Strapi)
             </Tabtext>
             <Tabtext>
-              SQL/mongoDB 
+              SQL/noSQL 
             </Tabtext>
             <Tabtext>
-              Firebase/GCP/Heroku
+              OpenMP + MPI + CUDA
             </Tabtext>
             <Tabtext>
               Pandas
@@ -95,36 +95,24 @@ export default function Expertise(){
             <Tabtext>
               Matplotlib/Seaborn 
             </Tabtext>
-            <Tabtext>
-              Geant4
-            </Tabtext>
-            <Tabtext>
-              GROMACS
-            </Tabtext>
           </div>
         </TabPane>
         <TabPane tabId="3">
           <div className={Styles.tabDisplayWrapper}>
             <Tabtext>
-              Physics
+              High Performance Computing
             </Tabtext>
             <Tabtext>
-              Graphs
+              Public and Private Key Cryptography
+            </Tabtext>
+            <Tabtext>
+              Graph Algorithms
             </Tabtext>
             <Tabtext>
               Data Structures/Algorithms
             </Tabtext>
             <Tabtext>
-              Computational Physics
-            </Tabtext>
-            <Tabtext>
               Data analysis
-            </Tabtext>
-            <Tabtext>
-              Molecular Simulation
-            </Tabtext>
-            <Tabtext>
-              Simulation Theory
             </Tabtext>
           </div>
         </TabPane>

@@ -93,11 +93,11 @@ export default function NavHome() {
                 rel="noopener noreferrer"
                 href="https://drive.google.com/file/d/1sCHyJpq87VKnGW3nmhM01ti48QiJ2Z1y/view?usp=sharing"
               >
-                CV
+                Resumé
               </a>
             </NavLink>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <NavLink className={Styles.navLinks}>
               <Link href="/projects">
                 <a>Projects</a>
@@ -110,7 +110,7 @@ export default function NavHome() {
                 <a>Blog</a>
               </Link>
             </NavLink>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <NavLink className={Styles.navLinks}>
               <Link href="/about-me">

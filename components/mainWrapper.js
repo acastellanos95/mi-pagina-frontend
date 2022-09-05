@@ -6,8 +6,14 @@ export default function MainWrapper() {
       <div className={Styles.wrapperText}>
         <h1>André Castellanos</h1>
         <h2>
-          Undergraduate Physicist and self-learning software engineer from
-          México.
+          Computer Science Master's degree student at CINVESTAV-IPN and software engineer from
+          México. Projects are in my github <a
+          href="https://github.com/acastellanos95"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className={"fab fa-github fa-lg " + Styles.BtnItem}></i>
+        </a>.
         </h2>
       </div>
       <div className={Styles.BtnWrapper}>

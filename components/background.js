@@ -7,8 +7,7 @@ export default function Background(){
         Background
       </h5>
       <p>
-        Studied physics at BUAP where I learnt my first programming language (C++98). From there I began a journey seeking myself to get into some kind of software and programming development using physics.
-        The first thing I developed was an LHC detector simulation from then I wrote programs about computational simulation theory where it all ended in my undergraduate thesis in molecular simulation. <i className="fas fa-rocket"></i>
+        Currently a Computer Science MSc student at CINVESTAV-IPN specializing in High Performance Computing and numerical methods. I worked as a .NET fullstack developer at Telegestion México. <i className="fas fa-rocket"></i>
       </p>
     </div>
   )

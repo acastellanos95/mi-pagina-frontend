@@ -2,16 +2,16 @@ import Layout from "../components/layout";
 import Head from "next/head";
 import Articles from "../components/Articles";
 
-export async function getStaticProps(context) {
-  const res = await fetch("https://polar-journey-96637.herokuapp.com/articles");
-  const articles = await res.json();
-  return {
-    props: {
-      articles,
-    }, // will be passed to the page component as props
-    revalidate: 1,
-  };
-}
+// export async function getStaticProps(context) {
+//   const res = await fetch("https://polar-journey-96637.herokuapp.com/articles");
+//   const articles = await res.json();
+//   return {
+//     props: {
+//       articles,
+//     }, // will be passed to the page component as props
+//     revalidate: 1,
+//   };
+// }
 
 export default function Blog({ articles }) {
   return (
@@ -50,11 +50,11 @@ export default function Blog({ articles }) {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.js" />
       </Head>
       {/* <NavBlog /> */}
-      <div className="uk-section">
+      {/* <div className="uk-section">
         <div className="uk-container uk-container-large">
           <Articles articles={articles} />
         </div>
-      </div>
+      </div> */}
     </Layout>
   );
 }

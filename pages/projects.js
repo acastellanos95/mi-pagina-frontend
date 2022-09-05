@@ -3,16 +3,16 @@ import { Row, Col, Container } from "reactstrap";
 import Project from "../components/project";
 import Head from "next/head";
 
-export async function getStaticProps(context) {
-  const res = await fetch("https://polar-journey-96637.herokuapp.com/projects");
-  const projects = await res.json();
-  return {
-    props: {
-      projects,
-    }, // will be passed to the page component as props
-    revalidate: 1,
-  };
-}
+// export async function getStaticProps(context) {
+//   const res = await fetch("https://polar-journey-96637.herokuapp.com/projects");
+//   const projects = await res.json();
+//   return {
+//     props: {
+//       projects,
+//     }, // will be passed to the page component as props
+//     revalidate: 1,
+//   };
+// }
 
 export default function Projects({ projects }) {
   return (
@@ -44,7 +44,7 @@ export default function Projects({ projects }) {
         <meta property="og:url" content="https://andrecastellanos.dev/" />
       </Head>
       <Container>
-        <Row>
+        {/* <Row>
           {projects.map((project, index) => {
             return (
               <Col key={project.id} md="4" lg="3" className="p-3">
@@ -52,7 +52,7 @@ export default function Projects({ projects }) {
               </Col>
             );
           })}
-        </Row>
+        </Row> */}
       </Container>
     </Layout>
   );

@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="publisher" href="https://andrecastellanos.dev/" />
         <meta name="rating" content="general" />
         <meta name="author" content="André Castellanos" />
-        <meta name="designer" content="acastellanosaldama@gmail.com" />
+        <meta name="designer" content="" />
         <meta name="revisit-after" content="1 day" />
         <meta name="robots" content="All" />
         <meta

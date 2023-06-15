@@ -12,7 +12,7 @@ export default function Contact() {
         <link rel="publisher" href="https://andrecastellanos.dev/" />
         <meta name="rating" content="general" />
         <meta name="author" content="André Castellanos" />
-        <meta name="designer" content="acastellanosaldama@gmail.com" />
+        <meta name="designer" content="" />
         <meta name="revisit-after" content="1 day" />
         <meta name="robots" content="All" />
         <meta
@@ -43,15 +43,10 @@ export default function Contact() {
         style={{ textAlign: "center", padding: "10% 10%" }}
         className="container-fluid"
       >
-        <h2>let's talk about projects</h2>
+        <h2>let's talk!</h2>
         <h4>
-          <a href="tel:+5212212851045">221-285-1045</a>
+          <a href="https://www.linkedin.com/in/acastellanos95/">LinkedIn</a>
         </h4>
-        <h6>
-          <a href="mailto:acastellanosaldama@gmail.com">
-            acastellanosaldama@gmail.com
-          </a>
-        </h6>
       </div>
     </Layout>
   );
